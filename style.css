@@ -102,6 +102,22 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 
+
+.btn{
+  padding: 20px 20px;
+  font-size: var(--font-sm);
+  background: var(--color-primary);
+  color: var(--color-white);
+  margin: 40px 0;
+  width: 100%;
+}
+
+@media(min-width:768px){
+  .btn {
+    width: 200px;
+  }
+}
+
 /* ////////////////////////////////////////////////////////////////////// */
 
 /*/////////////////////////////////////// header area */
@@ -193,28 +209,21 @@ body::after {
   color: var(--color-dark-400);
   font-weight: 400;
 }
-.hero--section__contant a {
-  padding: 20px 20px;
-  font-size: var(--font-sm);
-  background: var(--color-primary);
-  color: var(--color-white);
-  margin: 40px 0;
-  width: 100%;
-}
 .hero--section__contant a span {
   position: relative;
   left: 20px;
 }
+
 .hero--section__brands {
   justify-content: center;
   width: auto;
 }
 .hero--section__brands .group1,
 .group2 {
-  width: 45%;
+  width: 30%;
 }
 .hero--section__brands .group3 {
-  width: 45%;
+  width: 30%;
 }
 .hero--section__image {
   position: relative;
@@ -282,12 +291,9 @@ body::after {
     left: -50px;
     bottom: 40%;
   }
-  .hero--section__contant a {
-    width: 200px;
-  }
+  
   .hero--section__brands {
     justify-content: center;
-    width: 60%;
   }
 }
 /* ///////////////////////////////////// feature area */
@@ -452,7 +458,43 @@ body::after {
 }
 }
   
-/* category area */
+/* //////////////////////////////////////// category area */
+.inner--category{
+  padding: 100px 0;
+}
+.inner--category span{
+    font-weight: 500;
+  font-style: Medium;
+  font-size: 15px;
+}
+.inner--category h3{
+    font-size: var(--font-xl);
+  font-weight: 500;
+  margin: 15px 0; 
+  color: var(--color-dark-400);
+}
+.category--box{
+  /* width: 100%; */
+
+}
+.category--box__content{
+  background: var(--color-accent);
+  border: 2px solid var(--color-primary);
+  min-height: 292px;
+  width: 320px;
+  padding: 0 40px;
+}
+.category--box__content h3{
+  font-size: var(--font-lg);
+  color: var(--color-dark-400);
+  font-weight: 500;
+}
+
+@media(min-width:768px){
+  .category--box__content{
+  width: 292px;
+}
+}
 /* popular products area */
 /* call to action area */
 /* footer area */
